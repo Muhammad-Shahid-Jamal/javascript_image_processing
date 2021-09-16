@@ -8,6 +8,7 @@
         canvas.height = image.height;
         ctx.drawImage(image,0,0);
         const pixels = ctx.getImageData(0,0,canvas.width,canvas.height);
+        ctx.clearRect(0,0,canvas.width,canvas.height);
         
         let particales = [];
         const numberOfParticales = 5000;
